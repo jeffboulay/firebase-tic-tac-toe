@@ -1,7 +1,10 @@
 'use strict';
 
 /* @ngInject */
-function HomeController($scope, $state, firebaseFactory, $firebaseArray) {
+function HomeController($scope, $state, firebaseFactory, $firebaseArray,$firebaseAuth) {
+
+    var auth = $firebaseAuth();
+    console.log(auth);
     var ref = firebaseFactory.database().ref().child("matches");
     $scope.matches = $firebaseArray(ref);
     $scope.startMatch = function() {

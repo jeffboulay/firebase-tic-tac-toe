@@ -29,6 +29,9 @@ function MatchController($scope,$stateParams, firebaseFactory, $firebaseArray) {
         winner(6,7,8) ||
         winner(0,4,8) ||
         winner(2,4,6) ||
+        winner(0,3,6) ||
+        winner(1,4,7) ||
+        winner(2,5,8) ||
         stalemate();
     }
 
