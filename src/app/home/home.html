@@ -1,3 +1,7 @@
-<h1>Welcome to Angularfire Webpack Boilerplate</h1>
-
-{{object | json}}
+<h1>Tic Tac Toe</h1>
+<button ng-click="startMatch()">Start new Match</button>
+<ul>
+    <li ng-repeat="match in matches">
+        <a ui-sref="match({id:match.$id})">{{match.status}}</a>
+    </li>
+</ul>

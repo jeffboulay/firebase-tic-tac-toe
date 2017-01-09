@@ -1,0 +1,17 @@
+<h1>FIGHT</h1>
+<div class="playerTurn">
+    <h2>Current Player</h2>
+    {{match.currentPlayer}}
+    <h2>Status</h2>
+    {{match.status}}
+    <h2>Winner</h2>
+    {{match.winner}}
+</div>
+
+<div class="board">
+    <ul>
+        <li ng-repeat="square in match.board" ng-class="square.squareValue">
+            <a ng-click="selectSquare($index)">{{square.squareValue}}</a>
+        </li>
+    </ul>
+</div>

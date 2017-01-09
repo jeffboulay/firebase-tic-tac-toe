@@ -9,5 +9,6 @@ module.exports = angular.module('boilerplate-app', [
     'firebase',
     require('./firebase/index').name,
     require('./config/index').name,
+    require('./match/index').name,
     require('./home/index').name
 ]);
